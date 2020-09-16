@@ -3,7 +3,6 @@
 	/* 浏览器默认的盒子模型计算方法：“内容盒子” */
 	/* 盒子的总宽度=margin+bording+padding+width */
 	/* box-sizing: content-box; */
-	
 	/* 推荐得盒子模型计算方法“边框盒子”——边框以内的全算width
 	盒子的总宽度=margin+width*/
     box-sizing: border-box;
@@ -12,8 +11,7 @@ body{
 	font-size: 12px;
 	font-family: "arial, helvetica, sans-serif";
 	color: #333333;
-	background:#fff;
-	
+	background:#fff;	
 }
 a{
 	color: #333;
