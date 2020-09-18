@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				border: 1px solid #000;
+			}
+			.parebt{
+				height: 300px;
+				width: 700px;
+			}
+			.child1,.child2,.child3{/*情形0：child1hechild2等高*/
+				width: 300px;
+				height: 100px;
+				float: left;
+			}
+			.child1{/*情形1：child1比child2高*/
+				height: 110px;
+			}
+			.child2{/*情形2：child2比child1高*/
+				height: 120px;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>浮动布局的特殊情形1</h4>
+		<div class="parebt">
+			<div class="child1"></div>
+			<div class="child2"></div>
+			<div class="child3"></div>
+		</div>
+		<h4>浮动布局的特殊情形2</h4>
+		<div class="parebt">
+			<div class="child1"></div>
+			<div class="child2"></div>
+			<div class="child3"></div>
+		</div>
+	</body>
+</html>

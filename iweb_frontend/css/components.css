@@ -143,14 +143,137 @@
 	background: #ff9300;
 	cursor: pointer;
 }
+.carousel .controls{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.carousel .controls .prev,
+.carousel .controls .next{
+	position: absolute;
+	width: 54px;
+	height: 94px;
+	font-size: 4em;
+	line-height: 94px; /*文字竖直居中*/
+	text-align: center; /*文字水平居中*/
+	/* opacity: ;会导致当前元素及其中的文字/图像半透明 */
+	background:rgba(0,0,0,0.2);/*仅背景色半透明*/
+	color:#fff;
+	margin-top: -47px;
+}
+.carousel .controls .prev{
+	margin-left:-496px;
+}
+.carousel .controls .next{
+	margin-left:442px;
+}
+.carousel .controls .prev:hover,
+.carousel .controls .next:hover{
+	background: rgba(0,0,0,0.6);
+}
 /* 5.主体部分 */
 .mainbar{
 	border-bottom: 1px solid #ddd;
 }
+.mainbar .header{
+	border-bottom: 3px solid #ddd;
+	position: relative;/*为绝对定位的子元素提供参照物*/
+}
+.mainbar .header h3{
+	font-weight: normal;/*标题字取消加粗*/
+	margin-bottom: .5em;/*0.5em简写.5em*/
+	padding: 0  0.8em;
+}
+.mainbar .header a{
+	position: absolute;
+	right: 0;
+	bottom: .3em;
+}
+.mainbar .header span{
+	width:7em;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: -3px;/*此处不能使用0，仍然在父容器边线内*/
+	background: #00be56;
+}
+.mainbar .course{
+	padding: 1.2em 0;/*每个列中的.course需要自己提供上下间距*/
+	/* border: 1px solid #000; */
+}
+.mainbar .course  .pic img{
+	width: 100%;
+}
+.mainbar  .course  .title{
+	display: block; /*让课程标题占据一整行*/
+	/* text-align: center; */
+	line-height: 1.8em;
+}
+.mainbar  .course  .teacher{
+	display: block;
+	font-size: .8em;
+	color: #999;
+	/* text-align: center; */
+}
+.mainbar  .course  .price{
+	color:#ff5a00;
+	display: block;/*让价格占一阵行*/
+	font-weight: bold;
+	/* text-align: center; */
+	line-height: 1.6em;
+}
+/* 第1/5/9个，col-lg-3中的.course没有padding-left 
+.mainbar .col-lg-3:nth-child(4n+1) .course{
+	/* padding-left:0;	 */
+	/* margin-left: -1em; */
+}*/
+
+.row .tea{
+	/* margin-left: 2em; */
+	margin-top: 20px;
+}
+.mainbar .tea > li{
+	float: left;
+	margin-right: 12px;
+	margin-left: 11px;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+.mainbar .tea > li:last-child{
+	margin-right: 0;
+}
+.mainbar .tea > li > p{
+	line-height: 1.4em;
+}
+.mainbar .tea > li > span{
+	line-height: 1.4em;
+}
+
+
+/*底部条*/
 .bottombar{
 	background:#eee;
 	}
 	/* 选择"顶部条"中的"容器"下的第一个.row元素 */
 .bottombar > .container > .row:first-child {
 	border-bottom:1px solid #ddd;
+}
+.row ul li{
+	float: left;
+	margin-left: 100px;
+}
+.bottombar .row{
+	margin-left: -110px;
+	margin-top: 0;
+}
+.bottombar .fa{
+	color: green;
+	font-size: 48px;
+	margin-top: 35px;
+}
+.bottombar .word{
+	margin-left: 80px;
+	margin-top: -35px;
+	line-height: 10px;
 }
