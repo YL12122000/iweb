@@ -29,8 +29,24 @@ ol{
 li{
     list-style: none;
 }
-.hidden{
-	display: none;
+
+@media screen and (min-width:1024px) {
+	.hidden-lg{   /*仅仅在pc屏幕下隐藏*/
+		display:none;
+	}
+	
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.hidden-md{   /*仅仅在pad屏幕下隐藏*/
+		display:none;
+	}
+	
+}
+@media screen and (max-width:767px) {
+	.hidden-sm{   /*仅仅在phone屏幕下隐藏*/
+		display:none;
+	}
+	
 }
 .text-center{
 	text-align: center;

@@ -72,7 +72,56 @@
 	color:#00be56;
 	padding: 0 0.5em;
 }
-/* 导航条 */
+/*PHONE屏幕下的搜索条：LOGO+Search+hamburger*/
+@media screen and (max-width:767px) {
+	.searchbar{
+	background: #00be56;
+	border-bottom: 1px solid #b3efc0;
+	height:52px;
+	font-size: 1.15em;
+	}
+	.logo-container{
+		display: flex;  /*图片的容器显示模式变为：弹性盒子*/
+		align-items: center;/*弹性盒子的子元素居中对齐*/
+		height: 52px;/*容器的高大于内容的高，不可能有竖直居中问题*/
+	}
+	.logo_reverse{
+		/* flex:1; */
+		width: 100%;/*正常情况下，控制弹性盒子中的子元素的
+		尺寸应该使用“弹性占比（flex）即可——此方法只
+		会拉伸图片，而不改变的高，所以此处没有使用”*/
+	}
+	.search{
+		position:relative;/*相对定位——为放大镜提供定位参照*/
+		margin-top:10px;/*为输入框竖直居中增加商检局*/
+		top:0;/*清除全局样式中的定位相关的修改*/
+		right: 0;/*清除全局样式中的定位相关的修改*/
+	}
+	.search-input{
+		width: 100%;
+		padding:0 3em  0  0.6em;
+		margin-right: 0;/*清除之前对所以屏幕设定的间距*/
+	
+	}
+	.search-button{
+		background:transparent;
+		color: #00be56;
+		line-height: 32px;
+		top: -5px;
+	}
+	.navbar{
+		display:none;
+	}
+	.logo_reverse{
+		width: 100%;/*此处可微调logo图片的尺寸*/
+	}
+	.hamburger{
+		color: #fff;
+		line-height: 52px;
+		font-size:26px;
+	}
+}
+/* 3.导航条 */
 .navbar{
 	background: #00be56;
 	border-bottom: 1px solid #b3efc0;
