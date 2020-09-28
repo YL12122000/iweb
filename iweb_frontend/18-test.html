@@ -5,11 +5,15 @@
 		<title></title>
 	</head>
 	<body>
+		<div data-author="yangling" data-animate-max-width="80%" data-animate-min-width="20%" data-userage="20" data-buyCount="3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam vitae molestiae at sequi laudantium maiores recusandae quae voluptate explicabo porro culpa modi repellendus placeat molestias esse libero ullam expedita dicta.
+		</div>
 		<script>
-			let i=2
-			// let selector='li:nth-child(i+1)'
-			let selector='li:nth-child('+(i+1)+')'
-			console.log(selector)
+			let box=document.querySelector('[data-author="yangling"]')
+			//输出一个HTML元素或一个普通JS对象
+			// console.log(box)
+			//检查一个html元素对应的JS对象
+			console.dir(box)
 		</script>
 	</body>
 </html>
