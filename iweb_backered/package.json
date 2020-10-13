@@ -1,0 +1,29 @@
+{
+  "name": "iweb_backered",
+  "version": "1.0.0",
+  "description": "iWeb project backend data API subsystem",
+  "main": "main.js",
+  "scripts": {
+    "test": "node   ./test.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YL12122000/iweb.git"
+  },
+  "keywords": [
+    "iweb",
+    "backend",
+    "api",
+    "YL"
+  ],
+  "author": "YangLing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YL12122000/iweb/issues"
+  },
+  "homepage": "https://github.com/YL12122000/iweb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}

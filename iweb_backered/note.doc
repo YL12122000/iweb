@@ -16,3 +16,25 @@ Node.js不属于客户端范畴，与Java/PHP/.net语言类似，运行于服务
   使用Node.js 的基本步骤：
   ①下载并安装Node.js解释器：nodejs.org
   ②在命令行界面中启动Node.js解释器，运行编写的JS代码即可
+  
+  
+一、使用Node.js创建服务器端项目步骤
+①在服务器上安装Node.js解释器，确保在命令行中可以运行
+   node -v
+②创建项目必须的文件夹，例如iweb_backend,进入此文件夹，创建Node.js项目必须的描述文件：package.json
+ 可以手工创建该文件，并用记事本进行编辑
+ 也可以使用简化工具来创建此文件：npm init 
+③在项目根目录下，下载并安装必须的第三方模块：例如：
+   npm i mysql
+   npm i express
+   .....
+ 
+ 
+NMP与Node的关系
+Node.js的扩展模块有很多，为了简便开发者的查找和使用，有人专门创建了一个Node.js的扩展块仓库（npmjs.com）
+,并提供了一个命令行下载管理工具：Node Package Manager简称npm,在后来版本的Node.js安装包中，已经默认把npm安装在一起，
+作为官方的扩展模块维护工具。
+小知识：
+可以使用npm i xxx自动从npmjs.com仓库中下载指定的第三方模块；
+也可以使用npm i 自动读取package.json的指定的"依赖列表
+（dependecies）"查找必须的第三方依赖包，并自动从npmjs.com 上下载
